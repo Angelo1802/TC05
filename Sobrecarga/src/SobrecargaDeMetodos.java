@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author alexi
+ */
+public class SobrecargaDeMetodos {
+    // Método con un parámetro 
+    public void mostrarInfo(String nombre) { 
+        System.out.println("Nombre: " + nombre); 
+    }
+    // Método con un parámetro, pero de tipo diferente 
+    public void mostrarInfo(int edad) { 
+        System.out.println("Edad: " + edad); 
+    }
+    // Método con dos parámetros 
+    public void mostrarInfo(String nombre, int edad) { 
+        System.out.println("Nombre: " + nombre + ", Edad: " + edad); 
+    }
+    public static void main(String[] args) { 
+        SobrecargaDeMetodos obj = new SobrecargaDeMetodos(); 
+         obj.mostrarInfo("Juan"); 
+         obj.mostrarInfo(30); 
+         obj.mostrarInfo("Ana", 25); 
+    }
+}
